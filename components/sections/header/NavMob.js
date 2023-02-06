@@ -37,7 +37,7 @@ export default function NavMob() {
             <img onClick={()=> setOpen(current => !current)} className={`${open ? "hidden" : ""} h-4 mt-1`} src="/assets/icons/close.png" alt="" />
             <h3 className="text-white   font-bold">MENU</h3>
           </div>
-          <div className={`${open ? "hidden" : ""} md:hidden  flex flex-col justify-center`}>
+          <div className={`${open ? "hidden" : ""} md:hidden   flex flex-col justify-center`}>
             <ul className="flex flex-col mt-4 gap-4 text-white">
             <li className="font-bold text-xl">
             <Link href={list[0].path} className={currentRoute === `${list[0].path}` ? "border-b-2 border-yellow text-yellow " : "text-white"}>

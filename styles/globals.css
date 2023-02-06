@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.headerImg {
+  filter: brightness(60%);
+}
+.encapsulation{
+  text-shadow:
+  -2px 0px 0px rgba(0, 0, 0, 0.589),
+  2px 0px 0px rgb(23, 23, 22),
+  0px -2px 0px black,
+  0px 2px 0px rgb(0, 0, 0);
+}
