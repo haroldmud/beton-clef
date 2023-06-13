@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Header(props) {
   return(
-    <header className="text-blue relative lg:mb-40 md:mb-[10rem] mb-[50rem]">
+    <header className="text-blue relative lg:mb-40 md:mb-[10rem]">
       <Info/>
       <section className="relative">
         <div className="absolute w-full">

@@ -1,9 +1,14 @@
 import Header from "../components/sections/header"
-export default function Contact() {
+import Contact from "../components/sections/contact"
+import Footer from "../components/sections/footer"
+
+export default function Contacts() {
     return(
       <>
-        <Header headerImg="/assets/images/contact.jpg"/>  
-        <h1>this is the Contact</h1>
+        <Header headerImg="/assets/images/contact.jpg">  
+        <Contact />
+        </Header>
+        <Footer />
       </>
       )
   }

@@ -62,7 +62,9 @@ export default function Nav() {
             </li>
           </ul>
           </div>
-          <Button style="hidden">COMMANDEZ UN DEVIS</Button>
+          <Link href="/contact">
+            <Button style="hidden">COMMANDEZ UN DEVIS</Button>
+          </Link>
         </div>
       </nav>
   )
