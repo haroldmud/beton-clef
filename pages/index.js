@@ -7,7 +7,7 @@ import Footer from "../components/sections/footer"
 
 export default function Home() {
   return (
-    <section className="text">
+    <section id="home" className="text">
       <Header headerImg="/assets/images/hero.webp">
         <div className="absolute flex justify-center md:top-[13rem] top-32 w-[100%]" >
           <div className="max-w-7xl md:w-9/12 w-11/12">
@@ -15,7 +15,9 @@ export default function Home() {
               NOUS ELABORONS ET REALISONS DES VASTES CHANTIERS
             </h2>
             <div className="w-[12rem] text-center mt-6 hover:shadow-xl">
-              <Button>NOS REALISATIONS</Button>
+              <Button>
+                <a href="#footer">NOS REALISATIONS</a>
+              </Button>
             </div>
           </div>
         </div>

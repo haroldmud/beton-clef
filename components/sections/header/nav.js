@@ -7,7 +7,7 @@ export default function Nav() {
   const list = [
     {
       name:"ACCEUIL",
-      path:"/"
+      path:"/",
     }, 
     {
       name:"SERVICES",
