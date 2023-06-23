@@ -8,11 +8,7 @@ export default function Nav() {
     {
       name:"ACCEUIL",
       path:"/"
-    },
-    {
-      name:"A PROPOS",
-      path:"/aboutUs"
-    },
+    }, 
     {
       name:"SERVICES",
       path:"/service"
@@ -20,6 +16,10 @@ export default function Nav() {
     {
       name:"REALISATION",
       path:"/realisation"
+    },
+    {
+      name:"A PROPOS",
+      path:"/aboutUs"
     },
     {
       name:"CONTACT",
