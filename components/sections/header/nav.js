@@ -31,9 +31,9 @@ export default function Nav() {
   const currentRoute = router.pathname;
   return(
     <nav className="flex justify-center">
-        <div className="md:flex justify-between sm:w-9/12 w-11/12 py-2 bg-blue px-2 z-20 max-w-7xl">
+        <div className="md:flex justify-between xl:w-9/12 w-11/12 py-2 bg-blue px-2 z-20 max-w-7xl">
           <NavMob/>
-          <div className="hidden md:flex flex-col justify-center">
+          <div className="hidden xl:flex flex-col justify-center">
             <ul className="flex gap-4 text-white">
             <li className="font-bold text-xl">
             <Link href={list[0].path} className={currentRoute === `${list[0].path}` ? "border-b-2 border-yellow text-yellow " : "text-white"}>

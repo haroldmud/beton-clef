@@ -4,11 +4,11 @@ import Footer from "../components/sections/footer"
 
 export default function Contacts() {
     return(
-      <>
-        <Header headerImg="/assets/images/contact.jpg">  
-        <Contact />
+      <section className="relative flex flex-col justify-between">
+        <Header headerImg="/assets/images/contact.jpg">
+          <Contact />
         </Header>
-        <Footer />
-      </>
+        <Footer style={'md:mt-[35%] lg:mt-[15%] mt-[100%]'}/>
+      </section>
       )
   }

@@ -1,13 +1,10 @@
 export default function Info() {
   return(
     <section className="text-blue flex text-xs justify-center ">
-      <div className="flex justify-between max-w-7xl sm:w-9/12 w-11/12">
+      <div className="flex justify-between max-w-7xl xl:w-9/12 w-11/12">
         <div className="w-32 flex flex-col gap-[0.5px]">
           <img className="" src="/assets/icons/logo.jpg"/>
           <p className="text-yellow bg-blue text-sm text-center font-bold border-b border-yellow">ETS BCT</p>
-        </div>
-        <div className="sm:hidden flex flex-col justify-center">
-          <h2 className="text-blue text-xl font-bold bg-yellow h-fit p-2 rounded-xl shadow-sm">COMMANDEZ UN DEVIS</h2>
         </div>
         <div className="sm:flex hidden  flex-col justify-center">
         <div className="flex gap-4 w-fit h-fit">
@@ -20,7 +17,7 @@ export default function Info() {
               <p className="font-light text-sm">+243 994 345 462</p>
             </div>
           </div>
-          <div className="border-l "></div>
+          <div className="border-l3"></div>
           <div className="flex gap-2 w-fit">
             <div className="flex flex-col justify-center">
               <img className="w-6 h-6" src="/assets/icons/mail.png"/>

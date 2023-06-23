@@ -14,10 +14,6 @@ export default function Home() {
             <h2 className="encapsulation mt-8 md:text-[4rem] text-[2.4rem] flex md:flex-col  md:md:w-[30rem]  text-[#ffffff] shadow-lg font-bold md:leading-[4rem] leading-[3rem ]">
               NOUS ELABORONS ET REALISONS DES VASTES CHANTIERS
             </h2>
-            {/* <p className="md:w-96 text-sm w-11/12 text-[#e9ebc7] font-[400] shadow-lg mt-5 md:leading-5">
-            Notre but est de fournir à la population congolaise des services d'ingénierie civile de qualité,
-             allant de la planification des constructions à la réalisation effective de ces projets.
-            </p> */}
             <div className="w-[12rem] text-center mt-6 hover:shadow-xl">
               <Button>NOS REALISATIONS</Button>
             </div>

@@ -19,6 +19,9 @@ module.exports = {
       height:{
         fit:"fit-content",
       },
+      fontFamily: {
+        sans: ['var(--font-inter)']
+      }
     },
   },
   plugins: [],

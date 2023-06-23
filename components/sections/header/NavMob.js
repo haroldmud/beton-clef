@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Button from "../../ui/button";
 import React,{ useState, useEffect } from "react";
 
 
@@ -31,8 +32,8 @@ export default function NavMob() {
   const [open, setOpen] = useState(true);
 
   return(
-    <>
-      <div className="sm:hidden flex gap-2">
+    <section className="xl:hidden flex justify-between">
+      <div className="xl:hidden flex gap-2">
             <img onClick={()=> setOpen(current => !current)} className={`${open ? "" : "hidden"} h-6`} src="/assets/icons/menu.png" alt="" />
             <img onClick={()=> setOpen(current => !current)} className={`${open ? "hidden" : ""} h-4 mt-1`} src="/assets/icons/close.png" alt="" />
             <h3 className="text-white   font-bold">MENU</h3>
@@ -66,7 +67,11 @@ export default function NavMob() {
             </li>
           </ul>
           </div>
-    </>
-          
+          <div className="md:hidden">
+            <Link href="/contact">
+              <Button>COMMANDEZ UN DEVIS</Button>
+            </Link>
+          </div>
+    </section>
   )
 }
