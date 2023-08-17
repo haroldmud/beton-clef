@@ -32,32 +32,23 @@ export default function NavMob() {
   const [open, setOpen] = useState(true);
 
   return(
-    <section className="xl:hidden flex justify-between">
-      <div className="xl:hidden flex gap-2">
-            <img onClick={()=> setOpen(current => !current)} className={`${open ? "" : "hidden"} h-6`} src="/assets/icons/menu.png" alt="" />
-            <img onClick={()=> setOpen(current => !current)} className={`${open ? "hidden" : ""} h-4 mt-1`} src="/assets/icons/close.png" alt="" />
-            <h3 className="text-white   font-bold">MENU</h3>
+    <section className="md:hidden flex justify-between">
+      <div className="md:hidden flex gap-2 relative">
+        <div onClick={()=> setOpen(current => !current)} className={`${open ? "" : "hidden"} flex gap-2`}>
+          <img  className={` h-6`} src="/assets/icons/menu.png" alt="" />
+          <h3 className="text-white text-[0.9rem] h-fit mt-[0.1rem] font-bold">MENU</h3>
+        </div>
+        <div onClick={()=> setOpen(current => !current)} className={`${open ? "hidden" : "h-32"} flex gap-2`}>
+          <img  className={` h-4 mt-1`} src="/assets/icons/close.png" alt="" />
+          <h3 className="text-white text-[0.9rem] h-fit mt-[0.1rem] font-bold">FERME</h3>
+        </div>
+            
           </div>
-          <div className={`${open ? "hidden" : ""} md:hidden   flex flex-col justify-center`}>
-            <ul className="flex flex-col mt-4 gap-4 text-white">
+          <div className={`${open ? "hidden" : "absolute"} top-12 w-10/12 left-6 h-fit flex flex-col justify-center`}>
+            <ul className="flex flex-col gap-4 text-white mx-auto">
             <li className="font-bold text-xl">
             <Link href={list[0].path} className={currentRoute === `${list[0].path}` ? "border-b-2 border-yellow text-yellow " : "text-white"}>
               {list[0].name}
-            </Link>
-            </li>
-            <li className="font-bold text-xl">
-            <Link href={list[1].path} className={currentRoute === `${list[1].path}` ? "border-b-2 border-yellow text-yellow " : "text-white"}>
-              {list[1].name}
-            </Link>
-            </li>
-            <li className="font-bold text-xl">
-            <Link href={list[2].path} className={currentRoute === `${list[2].path}` ? "border-b-2 border-yellow text-yellow " : "text-white"}>
-              {list[2].name}
-            </Link>
-            </li>
-            <li className="font-bold text-xl">
-            <Link href={list[3].path} className={currentRoute === `${list[3].path}` ? "border-b-2 border-yellow text-yellow " : "text-white"}>
-              {list[3].name}
             </Link>
             </li>
             <li className="font-bold text-xl">
@@ -69,7 +60,9 @@ export default function NavMob() {
           </div>
           <div className="md:hidden">
             <Link href="/contact">
-              <Button>COMMANDEZ UN DEVIS</Button>
+              <button  className="text-blue text-[0.9rem] px-2  font-bold bg-yellow h-fit sm:rounded-lg rounded-xl shadow-sm">
+                COMMANDEZ UN DEVIS
+              </button>
             </Link>
           </div>
     </section>

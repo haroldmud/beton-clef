@@ -10,8 +10,8 @@ export default function About(){
   }
 
   return(
-    <section  className="max-w-7xl pt-20 md:w-6/12 mx-auto text-blue px-4 md:px-auto">
-        <h2 className="text-4xl font-thin mb-8">QUI SOMMES-NOUS</h2>
+    <section id="about"  className="max-w-7xl md:pt-20 pt-10 md:w-6/12 mx-auto text-blue px-4 md:px-auto">
+        <h2 className="md:text-4xl text-2xl font-thin md:mb-8 mb-4">QUI SOMMES-NOUS</h2>
         <div className="flex flex-col gap-4">
           <p>
           Un pôle dynamique d'expertise et de solutions technologiques sur mesure, BETON-CLEF TECHNIQUE (BCT) se présente comme une équipe dévouée d'ingénieurs, de techniciens et de gestionnaires sénégalais hautement expérimentés au sein de leurs domaines respectifs.

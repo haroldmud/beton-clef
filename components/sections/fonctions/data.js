@@ -30,3 +30,26 @@ export default [
     description:"Nous offrons des services d'administration de chantier complets. Nous gérons efficacement les calendriers, les budgets et les ressources pour assurer la qualité et la livraison à temps des projets."
   }
 ]
+
+export const navData= [
+  {
+    name:"ACCEUIL",
+    path:"/",
+  }, 
+  {
+    name:"SERVICES",
+    path:"#function"
+  },
+  {
+    name:"REALISATION",
+    path:"#realisation"
+  },
+  {
+    name:"A PROPOS",
+    path:"#about"
+  },
+  {
+    name:"CONTACT",
+    path:"/contact"
+  }
+];

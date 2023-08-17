@@ -20,7 +20,7 @@ export default function Header(props) {
     <header className="text-blue font-inter relative lg:mb-40 md:mb-[10rem]">
       <Info/>
       <section className="relative">
-        <div className="absolute w-full">
+        <div className="sticky top-0 w-full ">
           <Nav/>
         </div>
         <Link href="/">
