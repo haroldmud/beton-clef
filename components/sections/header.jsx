@@ -5,11 +5,28 @@ import { useState, useEffect } from "react"
 
 export default function Header(props) {
   const [isVisible, setIsVisible] = useState(false);
+  const [isScroll, setIsScroll] = useState(false);
+
+  useEffect(()=> {
+    const handleScroll= ()=>{
+      if(window.scrollY >=200) {
+        setIsScroll(true)
+      }else{
+        setIsScroll(false)
+      }
+    }
+    window.addEventListener(scroll, handleScroll());
+
+    return ()=>{
+      window.removeEventListener(scroll, handleScroll())
+    }
+
+  })
 
   useEffect(() => {
     const timer = setInterval(() => {
       setIsVisible(prev => !prev);
-    }, 7000);
+    }, 5000);
 
     return () => {
       clearInterval(timer);
@@ -30,11 +47,14 @@ export default function Header(props) {
       <div>
         {props.children}
       </div>
+      {
+        isScroll &&
       <div className={`fixed w-full bottom-2 ${isVisible ? "animate-bounce" : ""} z-50 flex justify-end pr-4`}>
         <a href="#home">
           <img className="w-12 rounded-3xl" src="/assets/icons/up.png" alt="" />
         </a>
       </div>
+      }
       </header>
   )
 }

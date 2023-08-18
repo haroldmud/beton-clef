@@ -80,7 +80,7 @@ export default function Home() {
       </Header>
       <section   className="max-w-7xl pt-20 md:w-6/12 mx-auto text-blue px-4 md:px-auto">
         <h2 className="md:text-4xl text-2xl font-thin md:mb-8 mb-4">BETON-CLEF A UNE FIERE TRADITION DE SERVICE ENTANT QU'ENTREPRENEUR</h2>
-        <p>Nous apportons plus de 15 ans d'expérience en construction locale et nationale; avec la réputation de réaliser des projets de conception-construction de grande envergure et uniques en avance sur le calendrier et dans les limites du budget. Notre entreprise est au service des clients et des propriétaires d'immeubles depuis plus de quatre décennies. Au cours de cette période, nous avons constaté que la clé du succès de chaque projet est de comprendre les besoins et les attentes du propriétaire, puis de dépasser ces attentes en faisant ce qui suit:</p>
+        <p>Nous apportons plus de 15 ans d'expérience en construction locale et nationale; avec la réputation de réaliser des projets de conception-construction de grande envergure et uniques en avance sur le calendrier et dans les limites du budget. Notre entreprise est au service des clients et des propriétaires d'immeubles depuis plus de deux décennies. Au cours de cette période, nous avons constaté que la clé du succès de chaque projet est de comprendre les besoins et les attentes du propriétaire, puis de dépasser ces attentes en faisant ce qui suit:</p>
       </section>
       <section className="text-blue flex justify-center md:pt-16 pt-8 md:mb-12">
         <Fonctions/>  
@@ -96,8 +96,8 @@ export default function Home() {
         <h2 className="md:text-4xl text-2xl font-thin md:mb-8 mb-4">CONTACTEZ-NOUS</h2>
         <p>N'hésitez pas à nous appeler pour discuter de votre futur projet ! Pour toute demande d'emploi, de sous-traitance pour nous ou d'informations sur notre projet en cours, veuillez utiliser le formulaire ci-dessous afin que nous puissions vous mettre en contact avec la meilleure personne pour vous aider.</p>
         <div className="mx-auto w-[12rem] text-center mt-6 ">
-          <Button>
-            <Link href="/contact">CONTACTEZ-NOUS</Link>
+          <Button style='mx-auto'>
+            <Link href="/contact">PRENDRE CONTACT</Link>
           </Button>
         </div>
       </section>

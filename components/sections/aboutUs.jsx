@@ -14,7 +14,7 @@ export default function About(){
         <h2 className="md:text-4xl text-2xl font-thin md:mb-8 mb-4">QUI SOMMES-NOUS</h2>
         <div className="flex flex-col gap-4">
           <p>
-          Un pôle dynamique d'expertise et de solutions technologiques sur mesure, BETON-CLEF TECHNIQUE (BCT) se présente comme une équipe dévouée d'ingénieurs, de techniciens et de gestionnaires sénégalais hautement expérimentés au sein de leurs domaines respectifs.
+          Un pôle dynamique d'expertise et de solutions technologiques sur mesure, BETON-CLEF TECHNIQUE (BCT) se présente comme une équipe dévouée d'ingénieurs, de techniciens et de gestionnaires congolais hautement expérimentés au sein de leurs domaines respectifs.
           </p>
           <p>
           Notre engagement envers la précision et le pragmatisme nous a valu une confiance inébranlable des plus hautes instances, tant dans le secteur public que privé.
