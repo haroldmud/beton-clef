@@ -7,9 +7,11 @@ import Footer from "../components/sections/footer"
 import About from "../components/sections/aboutUs"
 import Nav from "../components/sections/header/nav"
 import React, { useState, useEffect } from 'react';
+import { useSelector } from "react-redux/es/hooks/useSelector"
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
+  const menu = useSelector(prev => prev.menu.value);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,14 +36,14 @@ export default function Home() {
       </div>
       }
       <Header headerImg="/assets/images/hero.webp">
-        <div className="absolute flex justify-center md:top-[13rem] top-[11rem] w-[100%]" >
+        <div className={`absolute flex justify-center md:top-[13rem] ${!menu ? 'top-[11rem]'  : 'top-[15rem]'}  w-[100%] z-10`} >
           <div className="max-w-7xl md:w-9/12 w-11/12">
             <h2 className="encapsulation mt-8 md:text-[4rem] text-[2.4rem] flex md:flex-col  md:md:w-[30rem]  text-[#ffffff] shadow-lg font-bold md:leading-[4rem] leading-[3rem ]">
               NOUS ELABORONS ET REALISONS DES VASTES CHANTIERS
             </h2>
             <div className="w-[12rem] text-center mt-6 ">
               <Button>
-                <a href="#footer">NOS REALISATIONS</a>
+                <a href="#realisation">NOS REALISATIONS</a>
               </Button>
             </div>
           </div>

@@ -9,7 +9,6 @@ export default function Nav() {
 
   const router = useRouter();
   const currentRoute = router.pathname;
-  console.log(router.asPath)
   return(
     <nav className="flex justify-center">
         <div className="md:flex justify-between xl:w-9/12 w-11/12 py-2 bg-blue px-2 z-20 max-w-7xl">

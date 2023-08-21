@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Button from "../../ui/button";
-import React,{ useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import React,{ useState } from "react";
+import { menu } from "../../../slice/menuSlice";
 
 
 export default function NavMob() {
@@ -29,22 +30,26 @@ export default function NavMob() {
   ];
   const router = useRouter();
   const currentRoute = router.pathname;
+  const menuDispatch = useDispatch();
   const [open, setOpen] = useState(true);
+  const handleMenu = () =>{
+    menuDispatch(menu(open))
+  }
 
   return(
     <section className="md:hidden flex justify-between">
       <div className="md:hidden flex gap-2 relative">
-        <div onClick={()=> setOpen(current => !current)} className={`${open ? "" : "hidden"} flex gap-2`}>
+        <div onClick={()=> {setOpen(current => !current); handleMenu()}} className={`${open ? "" : "hidden"} flex gap-2`}>
           <img  className={` h-6`} src="/assets/icons/menu.png" alt="" />
           <h3 className="text-white text-[0.9rem] h-fit mt-[0.1rem] font-bold">MENU</h3>
         </div>
-        <div onClick={()=> setOpen(current => !current)} className={`${open ? "hidden" : "h-32"} flex gap-2`}>
+        <div onClick={()=> {setOpen(current => !current); handleMenu()}} className={`${open ? "hidden" : "h-32"} flex gap-2`}>
           <img  className={` h-4 mt-1`} src="/assets/icons/close.png" alt="" />
           <h3 className="text-white text-[0.9rem] h-fit mt-[0.1rem] font-bold">FERME</h3>
         </div>
             
           </div>
-          <div className={`${open ? "hidden" : "absolute"} top-12 w-10/12 left-6 h-fit flex flex-col justify-center`}>
+          <div className={`${open ? "hidden" : "absolute z-50"} top-12 w-10/12 left-6 h-fit flex flex-col justify-center`}>
             <ul className="flex flex-col gap-4 text-white mx-auto">
             <li className="font-bold text-xl">
             <Link href={list[0].path} className={currentRoute === `${list[0].path}` ? "border-b-2 border-yellow text-yellow " : "text-white"}>
