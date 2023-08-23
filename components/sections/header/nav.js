@@ -4,7 +4,7 @@ import NavMob from "./NavMob";
 import Button from "../../ui/button";
 import { navData } from "../fonctions/data";
 
-export default function Nav() {
+export default function Nav(props) {
   const list = navData;
 
   const router = useRouter();
@@ -12,7 +12,7 @@ export default function Nav() {
   return(
     <nav className="flex justify-center">
         <div className="md:flex justify-between xl:w-9/12 w-11/12 py-2 bg-blue px-2 z-20 max-w-7xl">
-          <NavMob/>
+          <NavMob open={props.open} click={props.click} unclick={props.unclick}/>
           <div className="hidden md:flex flex-col justify-center">
             <ul className="flex gap-4 text-white">
             <li className="font-bold text-xl">

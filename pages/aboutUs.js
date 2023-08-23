@@ -1,4 +1,4 @@
-import Header from "../components/sections/header"
+ import Header from "../components/sections/header"
 import Footer from "../components/sections/footer"
 
 export default function Apropos() {

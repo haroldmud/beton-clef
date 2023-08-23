@@ -38,7 +38,7 @@ export default function Header(props) {
       <Info/>
       <section className="relative">
         <div className="sticky top-0 w-full ">
-          <Nav/>
+          <Nav open={props.open} click={props.click} unclick={props.unclick}/>
         </div>
         <Link href="/">
           <img className="headerImg sm:h-[47.1rem] h-[35rem] w-full object-cover fill-neutral-400" src={props.headerImg} alt="hero section image" />
