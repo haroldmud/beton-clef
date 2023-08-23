@@ -25,11 +25,11 @@ export default function Contacts(){
             <div>
               <div className="text-sm flex w-full justify-between gap-2">
                 <div className="w-full">
-                  <h4 className="text-white">First Name<span className="font-bold ml-1 my-auto text-red-500">{`*`}</span></h4>
+                  <h4 className="text-white">Nom<span className="font-bold ml-1 my-auto text-red-500">{`*`}</span></h4>
                   <input type="text" name="first-name" className="rounded-tl-lg outline-none w-full border border-gray-500 pl-2 py-2" required />
                 </div>
                 <div className="w-full">
-                  <h4 className="text-white">Last Name <span className="font-bold ml-1 my-auto text-red-500">{`*`}</span></h4>
+                  <h4 className="text-white">Post-nom<span className="font-bold ml-1 my-auto text-red-500">{`*`}</span></h4>
                   <input type="text" name="last-name" className="rounded-tr-lg outline-none w-full border border-gray-500 pl-2 py-2" required />
                 </div>
               </div>
@@ -41,7 +41,7 @@ export default function Contacts(){
               </div>
               <div className="text-sm flex w-full justify-between gap-2 mt-4">
                 <div className="w-full">
-                  <h3 className="flex text-white text-sm">Subject <span className="font-bold ml-1 my-auto text-red-500">{`*`}</span></h3>
+                  <h3 className="flex text-white text-sm">Sujet <span className="font-bold ml-1 my-auto text-red-500">{`*`}</span></h3>
                   <input type="text" name="subject" className="outline-none w-full border border-gray-500 pl-2 py-2" required />
                 </div>
               </div>
