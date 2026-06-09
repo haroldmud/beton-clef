@@ -86,6 +86,31 @@ export default function Home() {
       <section className="text-blue flex justify-center md:pt-16 pt-8 md:mb-12">
         <Fonctions />
       </section>
+      {/* Clients */}
+      <section className="relative flex justify-center md:py-16 py-10 overflow-hidden">
+        <div className="absolute inset-0 background" />
+        <div className="relative z-10 max-w-7xl w-11/12 mx-auto">
+          <h2 className="text-white font-thin text-2xl md:text-4xl text-center mb-10">NOS CLIENTS</h2>
+          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
+            {[
+              { name: 'UNICEF', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Flag_of_UNICEF.svg/3840px-Flag_of_UNICEF.svg.png' },
+              { name: 'WFP',    src: 'https://www.artemis.bm/wp-content/uploads/2018/09/world-food-programme-logo.png' },
+              { name: 'OMS',    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo_de_l%27Organisation_mondiale_de_la_sant%C3%A9.svg/3840px-Logo_de_l%27Organisation_mondiale_de_la_sant%C3%A9.svg.png' },
+              { name: 'FAO',    src: 'https://upload.wikimedia.org/wikipedia/commons/d/db/FAO_logo.svg' },
+              { name: 'CICR',   src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Emblem_of_the_ICRC_fr.svg/1280px-Emblem_of_the_ICRC_fr.svg.png' },
+            ].map(({ name, src }) => (
+              <div key={name} className="flex flex-col items-center gap-2 group">
+                <img
+                  src={src}
+                  alt={name}
+                  className="h-16 md:h-20 w-auto object-contain grayscale opacity-70 transition-all duration-500 ease-in-out group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-slate-400">
         <section id="realisation" className="max-w-7xl pt-20 md:w-6/12 mx-auto text-slate-200 px-4 md:px-auto ">
           <h2 className="md:text-4xl text-2xl font-thin md:mb-8 mb-4">NOUS PRENONS COMPTE DANS LES PROJETS QUE NOUS AVONS RÉALISÉS</h2>
