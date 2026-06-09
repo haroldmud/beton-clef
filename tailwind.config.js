@@ -20,7 +20,7 @@ module.exports = {
         fit:"fit-content",
       },
       fontFamily: {
-        sans: ['var(--font-inter)']
+        sans: ['"Google Sans"', 'sans-serif']
       }
     },
   },
