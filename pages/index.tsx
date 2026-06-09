@@ -37,7 +37,7 @@ export default function Home() {
       <Header open={open} click={handleOpen} unclick={handleClose} headerImg="/assets/images/hero.webp">
         <div className={`absolute flex justify-center md:top-[13rem] ${open ? 'top-[11rem]' : 'top-[15rem]'} w-[100%] z-10`}>
           <div className="max-w-7xl md:w-9/12 w-11/12 md:pt-24">
-            <h2 className="encapsulation mt-8 md:text-[4rem] text-[2.4rem] flex md:flex-col md:md:w-[60rem] text-slate-200 font-bold md:leading-[4rem] leading-[3rem]">
+            <h2 className="encapsulation mt-8 md:text-[4rem] text-[2.4rem] flex md:flex-col md:md:w-[60rem] text-white font-semibold md:leading-[5rem] leading-[3rem]">
               NOUS ELABORONS ET REALISONS DES VASTES CHANTIERS
             </h2>
             <div className="mt-12">
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="function" className="md:absolute w-full lg:-bottom-[8.5rem] md:-bottom-[12rem] flex justify-center text-slate-200 ">
+        <div id="function" className="md:absolute w-full lg:-bottom-[8.5rem] md:-bottom-[12rem] flex justify-center text-slate-100 ">
           <div className="flex md:flex-row flex-col max-w-7xl lg:w-7/12 md:w-9/12 background md:p-10 p-8 md:gap-8 shadow-lg">
             <div className="p-2 md:w-[30rem]">
               <div className="flex justify-center md:mb-9 mb-4">
@@ -55,7 +55,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-bold mb-2 text-center">Conception et Plans</h3>
-                <p className="text-xs text-center w-8/12 mx-auto">Dans notre entreprise, nous vous offrons des services de conception et de planification créatifs.</p>
+                <p className="text-xs text-center w-8/12 mx-auto">Nous vous offrons des services de conception et de planification créatifs.</p>
               </div>
             </div>
             <div className="p-2 md:w-[30rem]">
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-bold mb-2 text-center">Priorisation de la qualité</h3>
-                <p className="text-xs text-center w-8/12 mx-auto">Nos projets répondent aux normes les plus élevées en matière de sécurité, de fonctionnalité, de durabilité et d'esthétique.</p>
+                <p className="text-xs text-center w-8/12 mx-auto">Nos projets répondent aux normes les plus élevées en matière de sécurité.</p>
               </div>
             </div>
             <div className="p-2 md:w-[30rem]">
@@ -73,7 +73,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-bold mb-2 text-center">Gestion de construction</h3>
-                <p className="text-xs text-center w-8/12 mx-auto">Ceci inclut la planification des ressources, la budgétisation, la gestion de delais et la surveillance de la qualité.</p>
+                <p className="text-xs text-center w-8/12 mx-auto">La gestion de delais et la surveillance de la qualité est notre priorite.</p>
               </div>
             </div>
           </div>

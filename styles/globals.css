@@ -18,7 +18,9 @@
 }
 
 .background {
-  background-color: #263869cf;
+  background-color: #26386931;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .color {
