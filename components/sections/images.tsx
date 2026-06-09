@@ -8,7 +8,7 @@ const images = [
 
 export default function Images() {
   return (
-    <section className="max-w-7xl mx-auto md:pt-20">
+    <section className="max-w-7xl mx-auto md:py-12">
       <div className="grid grid-cols-12 grid-rows-12 gap-2 p-8">
         <div className="md:col-span-3 md:row-span-3 col-span-6">
           <img src={images[0]} alt="Image 1" className="w-full h-full object-cover" />
