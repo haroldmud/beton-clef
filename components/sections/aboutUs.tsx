@@ -44,7 +44,7 @@ export default function About() {
               Tout secteur de l'activité de GTI est une spécialité. Le secteur désigné est donc traité exclusivement par un spécialiste.
               Ainsi les activités sont axées sur :
               <ul className="ml-8">
-                <li>- Études et réalisation de projets de bâtiments sociaufasx et industriels</li>
+                <li>- Études et réalisation de projets de bâtiments sociaux et industriels</li>
                 <li>- Études et réalisations d'infrastructures rurales et urbaines</li>
               </ul>
             </p>
