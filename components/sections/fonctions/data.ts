@@ -38,7 +38,7 @@ const data: FunctionItem[] = [
   {
     image: 'https://i.pinimg.com/736x/3e/06/9c/3e069cddd8436a9a99d8566cf1ab1033.jpg',
     title: 'Administration de chantier',
-    description: 'Nous offrons des services d\'administration de chantier complets. Nous gérons efficacement les calendriers, les budgets et les ressources pour assurer la qualité et la livraison à temps des projets.',
+    description: 'Nous gérons efficacement les calendriers, les budgets et les ressources pour assurer la qualité et la livraison à temps des projets.',
   },
 ]
 

@@ -79,7 +79,7 @@ export default function Home() {
           </div>
         </div>
       </Header>
-      <section className="max-w-7xl pt-20 md:w-6/12 mx-auto text-blue px-4 md:px-auto">
+      <section className="max-w-7xl pt-20 md:w-8/12 mx-auto text-blue px-4 md:px-auto">
         <h2 className="md:text-4xl text-2xl font-thin md:mb-8 mb-4">BETON-CLEF A UNE FIERE TRADITION DE SERVICE ENTANT QU'ENTREPRENEUR</h2>
         <p>Forts de plus de 15 ans d’expérience dans la construction locale et nationale, nous réalisons des projets d’envergure dans le respect des délais et du budget. Depuis plus de deux décennies, nous accompagnons nos clients en plaçant leurs besoins au cœur de chaque projet et en nous engageant à dépasser leurs attentes.</p>
       </section>
@@ -87,10 +87,10 @@ export default function Home() {
         <Fonctions />
       </section>
       {/* Clients */}
-      <section className="relative flex justify-center md:py-16 py-10 overflow-hidden">
-        <div className="absolute inset-0 background" />
+      <section className="relative flex justify-center md:py-32 py-16 overflow-hidden">
+        <div className="absolute inset-0 bg-white" />
         <div className="relative z-10 max-w-7xl w-11/12 mx-auto">
-          <h2 className="text-white font-thin text-2xl md:text-4xl text-center mb-10">NOS CLIENTS</h2>
+          <h2 className="text-gray-500 font-thin text-2xl md:text-4xl text-center mb-10">ILS NOUS ONT FAIT CONFIANCE</h2>
           <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
             {[
               { name: 'UNICEF', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Flag_of_UNICEF.svg/3840px-Flag_of_UNICEF.svg.png' },
@@ -112,14 +112,14 @@ export default function Home() {
       </section>
 
       <section className="bg-slate-400">
-        <section id="realisation" className="max-w-7xl pt-20 md:w-6/12 mx-auto text-slate-200 px-4 md:px-auto ">
+        <section id="realisation" className="max-w-7xl pt-20 md:w-8/12 mx-auto text-slate-200 px-4 md:px-auto ">
           <h2 className="md:text-4xl text-2xl font-thin md:mb-8 mb-4">NOUS PRENONS COMPTE DANS LES PROJETS QUE NOUS AVONS RÉALISÉS</h2>
           <p>Bien que la satisfaction de nos clients soit notre principale mesure d'excellence, nous avons également été récompensés par de nombreux prix au fil des ans pour la sécurité, les pratiques commerciales et l'excellence de la conception. Nous comprenons que les projets ne représentent pas seulement des bâtiments, mais les plans d'avenir de nos clients.</p>
         </section>
         <Images />
       </section>
       <About />
-      <section className="max-w-7xl pt-20 md:w-6/12 mx-auto text-blue px-4 md:px-auto">
+      <section className="max-w-7xl pt-20 md:w-8/12 mx-auto text-blue px-4 md:px-auto">
         <h2 className="md:text-4xl text-2xl font-thin md:mb-8 mb-4">CONTACTEZ-NOUS</h2>
         <p>N'hésitez pas à nous appeler pour discuter de votre futur projet ! Pour toute demande d'emploi, de sous-traitance pour nous ou d'informations sur notre projet en cours, veuillez utiliser le formulaire ci-dessous afin que nous puissions vous mettre en contact avec la meilleure personne pour vous aider.</p>
         <div className="mx-auto w-[12rem] text-center mt-6">

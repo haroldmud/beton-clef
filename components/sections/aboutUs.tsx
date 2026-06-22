@@ -7,7 +7,7 @@ export default function About() {
   const [roll, setRoll] = useState(false)
 
   return (
-    <section id="about" className="max-w-7xl md:pt-20 pt-10 md:w-6/12 mx-auto text-blue px-4 md:px-auto">
+    <section id="about" className="max-w-7xl md:pt-20 pt-10 md:w-8/12 mx-auto text-blue px-4 md:px-auto">
       <h2 className="md:text-4xl text-2xl font-thin md:mb-8 mb-4">QUI SOMMES-NOUS</h2>
       <div className="flex flex-col gap-4">
         <p>
