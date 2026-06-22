@@ -45,7 +45,7 @@ export default function About() {
               Ainsi les activités sont axées sur :
               <ul className="ml-8">
                 <li>- Études et réalisation de projets de bâtiments sociaux et industriels</li>
-                <li>- Études et réalisations d'infrastructures rurales etfsa urbaines</li>
+                <li>- Études et réalisations d'infrastructures rurales et urbaines</li>
               </ul>
             </p>
           </div>
