@@ -20,8 +20,8 @@ export default function NavMob({ open, click, unclick }: NavMobProps) {
   const currentRoute = router.pathname
 
   return (
-    <section className="md:hidden flex justify-between">
-      <div className="md:hidden flex gap-2 relative">
+    <section className="lg:hidden flex justify-between">
+      <div className="lg:hidden flex gap-2 relative">
         <div onClick={click} className={`${open ? '' : 'hidden'} flex gap-2`}>
           <img className="h-6" src="/assets/icons/menu.png" alt="" />
           <h3 className="text-white text-[0.9rem] h-fit mt-[0.1rem] font-bold">MENU</h3>
