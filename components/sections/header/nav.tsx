@@ -26,7 +26,7 @@ export default function Nav({ open, click, unclick }: NavProps) {
               </Link>
             </li>
             {currentRoute === navData[0].path && (
-              <div className="md:flex gap-4">
+              <div className="lg:flex gap-4">
                 <li className="font-bold text-xl">
                   <Link href={navData[1].path} className={currentRoute === navData[1].path ? 'border-b-2 border-yellow text-yellow' : 'text-white'}>
                     {navData[1].name}
