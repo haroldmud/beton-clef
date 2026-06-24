@@ -31,7 +31,7 @@ export default function Header({ children, headerImg, open, click, unclick }: He
   }, [])
 
   return (
-    <header className="text-blue font-inter relative lg:mb-40 md:mb-[10rem]">
+    <header className="text-blue font-inter relative lg:mb-40">
       <Info />
       <section className="relative">
         <div className="sticky top-0 w-full">

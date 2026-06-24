@@ -30,7 +30,7 @@ export default function Info() {
               </a>
             </div>
             <div className="border-l sm:flex hidden"></div>
-            <div className="sm:flex hidden gap-2 w-fit">
+            <div className="lg:flex hidden gap-2 w-fit">
               <div className="flex flex-col justify-center">
                 <img className="w-6 h-6" src="/assets/icons/clock.png" alt="" />
               </div>
@@ -39,8 +39,8 @@ export default function Info() {
                 <p className="font-light text-sm">Lun.- Sam. 07h-20h</p>
               </div>
             </div>
-            <div className="border-l sm:flex hidden"></div>
-            <div className="sm:flex hidden gap-2 w-fit">
+            <div className="border-l lg:flex hidden"></div>
+            <div className="lg:flex hidden gap-2 w-fit">
               <div className="flex flex-col justify-center">
                 <img className="w-6 h-6" src="/assets/icons/map.png" alt="" />
               </div>
