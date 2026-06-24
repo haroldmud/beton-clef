@@ -41,7 +41,7 @@ export default function About() {
               <span className="text-2xl color"><SiAzurefunctions /></span>Fonctionnement
             </h2>
             <p>
-              Tout secteur de l'activité d GTI est une spécialité. Le secteur désigné est donc traité exclusivement par un spécialiste.
+              Tout secteur de l'activité de GTI est une spécialité. Le secteur désigné est donc traité exclusivement par un spécialiste.
               Ainsi les activités sont axées sur :
               <ul className="ml-8">
                 <li>- Études et réalisation de projets de bâtiments sociaux et industriels</li>
