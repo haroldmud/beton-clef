@@ -2,7 +2,7 @@ import data from './data'
 
 export default function Fonctions() {
   return (
-    <div className="grid md:grid-cols-3 gap-1 md:max-w-7xl sm:w-9/12 w-11/12 justify-center">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:max-w-7xl sm:w-9/12 w-11/12 justify-center">
       {data.map((item, index) => (
         <div
           key={index}
