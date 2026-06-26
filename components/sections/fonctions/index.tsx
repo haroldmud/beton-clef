@@ -30,12 +30,6 @@ export default function Fonctions() {
             </h2>
           </div>
 
-          {/* description — always visible on mobile, hidden on md, fades in on hover at lg+ */}
-          <div className="absolute inset-0 flex items-end justify-center pb-6 px-4 opacity-100 md:opacity-0 lg:translate-y-4 lg:transition-all lg:duration-500 lg:ease-in-out lg:group-hover:opacity-100 lg:group-hover:translate-y-0">
-            <p className="text-white text-sm text-center leading-relaxed">
-              {item.description}
-            </p>
-          </div>
         </div>
       ))}
     </div>

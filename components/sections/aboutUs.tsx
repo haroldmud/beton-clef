@@ -16,9 +16,6 @@ export default function About() {
         <p>
           Notre engagement envers la précision et le pragmatisme nous a valu une confiance inébranlable des plus hautes instances, tant dans le secteur public que privé.
         </p>
-        <p>
-          Notre mission principale consiste à agir en tant que ressource essentielle pour les dirigeants d'entreprises publiques et privées qui sont parties prenantes dans les domaines du génie civil, de la construction, des routes, des structures architecturales, de l'infrastructure rurale et au-delà. Nous opérons sur plusieurs fronts, contribuant non seulement à la délibération stratégique, mais aussi à la concrétisation de leurs visions et programmes.
-        </p>
       </div>
       {!roll && (
         <div className="mx-auto w-[12rem] text-center mt-6">
