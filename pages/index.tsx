@@ -37,7 +37,7 @@ export default function Home() {
       <Header open={open} click={handleOpen} unclick={handleClose} headerImg="/assets/images/hero.webp">
         <div className={`absolute flex justify-center md:top-[13rem] ${open ? 'top-[11rem]' : 'top-[15rem]'} w-[100%] z-10`}>
           <div className="max-w-7xl md:w-9/12 w-11/12 md:pt-24">
-            <h2 className="encapsulation mt-8 md:text-[4rem] text-[2.4rem] flex md:flex-col md:md:w-[60rem] text-white font-semibold md:leading-[5rem] leading-[3rem]">
+            <h2 className="encapsulation mt-8 md:text-[4rem] text-[2rem] flex md:flex-col lg:w-[60rem] text-white font-semibold md:leading-[5rem] leading-[3rem]">
               NOUS ELABORONS ET REALISONS DES VASTES CHANTIERS
             </h2>
             <div className="mt-12">
