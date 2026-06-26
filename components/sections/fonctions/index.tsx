@@ -18,8 +18,8 @@ export default function Fonctions() {
           {/* persistent dark overlay */}
           <div className="absolute inset-0 bg-black/40 transition-opacity duration-500 ease-in-out group-hover:bg-black/60" />
 
-          {/* icon + title — slide up and shrink on hover (lg+ only) */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 lg:transition-all lg:duration-500 lg:ease-in-out lg:group-hover:-translate-y-8 lg:group-hover:scale-90">
+          {/* icon + title — slide up on hover, disabled at md (iPad) only */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 transition-all duration-500 ease-in-out group-hover:-translate-y-8 group-hover:scale-90 md:transition-none md:group-hover:translate-y-0 md:group-hover:scale-100 lg:transition-all lg:duration-500 lg:ease-in-out lg:group-hover:-translate-y-8 lg:group-hover:scale-90">
             <img
               className="w-12 h-12 object-contain drop-shadow-lg"
               src={`/assets/icons/section3/image${index + 1}.png`}
@@ -30,8 +30,8 @@ export default function Fonctions() {
             </h2>
           </div>
 
-          {/* description — fades in from below on hover (lg+ only) */}
-          <div className="absolute inset-0 flex items-end justify-center pb-6 px-4 opacity-0 translate-y-4 lg:transition-all lg:duration-500 lg:ease-in-out lg:group-hover:opacity-100 lg:group-hover:translate-y-0">
+          {/* description — fades in on hover, disabled at md (iPad) only */}
+          <div className="absolute inset-0 flex items-end justify-center pb-6 px-4 opacity-0 translate-y-4 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 md:transition-none md:group-hover:opacity-0 md:group-hover:translate-y-4 lg:transition-all lg:duration-500 lg:ease-in-out lg:group-hover:opacity-100 lg:group-hover:translate-y-0">
             <p className="text-white text-sm text-center leading-relaxed">
               {item.description}
             </p>
