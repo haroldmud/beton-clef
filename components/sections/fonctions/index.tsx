@@ -25,7 +25,7 @@ export default function Fonctions() {
               src={`/assets/icons/section3/image${index + 1}.png`}
               alt=""
             />
-            <h2 className="text-white font-bold text-center text-base px-4 drop-shadow">
+            <h2 className="xl:group-hover:block lg:group-hover:hidden text-white font-bold text-center text-base px-4 drop-shadow">
               {item.title}
             </h2>
           </div>

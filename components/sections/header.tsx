@@ -46,6 +46,21 @@ export default function Header({ children, headerImg, open, click, unclick }: He
         </Link>
       </section>
       <div>{children}</div>
+      {isScroll && (
+        <a
+          href="https://wa.me/243994345462"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group fixed bottom-12 right-12 z-50 flex items-center gap-2"
+        >
+          <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white text-green-600 text-sm font-semibold px-3 py-1 rounded-full shadow-lg whitespace-nowrap">
+            Discutez avec nous
+          </span>
+          <div className="w-12 h-12 rounded-full shadow-[0_4px_20px_rgba(37,211,102,0.5)] hover:scale-110 transition-transform duration-200">
+            <img src="/assets/icons/whatsapp.png" alt="WhatsApp" className="w-full h-full object-contain" />
+          </div>
+        </a>
+      )}
     </header>
   )
 }
