@@ -17,7 +17,7 @@ export default function Header({ children, headerImg, open, click, unclick }: He
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScroll(window.scrollY >= 1000)
+      setIsScroll(window.scrollY >= 200)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -51,12 +51,12 @@ export default function Header({ children, headerImg, open, click, unclick }: He
           href="https://wa.me/243994345462"
           target="_blank"
           rel="noopener noreferrer"
-          className="group fixed bottom-12 right-12 z-50 flex items-center gap-2"
+          className="group fixed md:bottom-12 bottom-6 md:right-12 right-6 z-50 flex items-center gap-2"
         >
           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white text-green-600 text-sm font-semibold px-3 py-1 rounded-full shadow-lg whitespace-nowrap">
             Discutez avec nous
           </span>
-          <div className="w-12 h-12 rounded-full shadow-[0_4px_20px_rgba(37,211,102,0.5)] hover:scale-110 transition-transform duration-200">
+          <div className="w-12 h-12 rounded-full shadow-[0_4px_24px_rgba(37,211,102,0.9)] hover:scale-110 transition-transform duration-200">
             <img src="/assets/icons/whatsapp.png" alt="WhatsApp" className="w-full h-full object-contain" />
           </div>
         </a>
