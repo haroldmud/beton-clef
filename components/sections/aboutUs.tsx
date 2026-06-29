@@ -2,6 +2,7 @@ import Button from '../ui/button'
 import { useState } from 'react'
 import { SiAzurefunctions } from 'react-icons/si'
 import { GiFlyingFox, GiStrongMan } from 'react-icons/gi'
+import { FiChevronDown } from 'react-icons/fi'
 
 export default function About() {
   const [roll, setRoll] = useState(false)
@@ -19,7 +20,9 @@ export default function About() {
       </div>
       {!roll && (
         <div className="mx-auto text-center mt-6">
-          <Button onClick={() => setRoll(true)}>DECOUVREZ-EN PLUS</Button>
+          <Button onClick={() => setRoll(true)}>
+            <span className="flex items-center gap-2">DECOUVREZ-EN PLUS <FiChevronDown className="text-lg" /></span>
+          </Button>
         </div>
       )}
       {roll && (

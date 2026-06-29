@@ -7,6 +7,7 @@ import Footer from "../components/sections/footer"
 import About from "../components/sections/aboutUs"
 import Nav from "../components/sections/header/nav"
 import React, { useState, useEffect } from 'react'
+import { FiArrowUpRight } from 'react-icons/fi'
 
 export default function Home() {
   const [mounted, setMounted] = useState(false)
