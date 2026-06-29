@@ -10,6 +10,19 @@ interface NavProps {
   unclick?: () => void
 }
 
+const sectionLinks = [
+  { name: 'ACCEUIL',     hash: '#home' },
+  { name: 'SERVICES',    hash: '#function' },
+  { name: 'REALISATION', hash: '#realisation' },
+  { name: 'A PROPOS',    hash: '#about' },
+]
+
+function scrollTo(hash: string) {
+  const el = document.querySelector(hash)
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
+  else window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
 export default function Nav({ open, click, unclick }: NavProps) {
   const router = useRouter()
   const currentRoute = router.pathname
@@ -27,21 +40,13 @@ export default function Nav({ open, click, unclick }: NavProps) {
             </li>
             {currentRoute === navData[0].path && (
               <div className="lg:flex gap-4">
-                <li className="font-bold text-xl">
-                  <Link href={navData[1].path} className={currentRoute === navData[1].path ? 'border-b-2 border-yellow text-yellow' : 'text-white'}>
-                    {navData[1].name}
-                  </Link>
-                </li>
-                <li className="font-bold text-xl">
-                  <a href={navData[2].path} className="text-white">
-                    {navData[2].name}
-                  </a>
-                </li>
-                <li className="font-bold text-xl">
-                  <Link href={navData[3].path} className={currentRoute === navData[3].path ? 'border-b-2 border-yellow text-yellow' : 'text-white'}>
-                    {navData[3].name}
-                  </Link>
-                </li>
+                {sectionLinks.slice(1).map(({ name, hash }) => (
+                  <li key={hash} className="font-bold text-xl">
+                    <button onClick={() => scrollTo(hash)} className="text-white hover:text-yellow transition-colors">
+                      {name}
+                    </button>
+                  </li>
+                ))}
               </div>
             )}
             <li className="font-bold text-xl">
