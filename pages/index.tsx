@@ -28,7 +28,7 @@ export default function Home() {
   function handleClose() { setOpen(true) }
 
   return (
-    <section id="home" className="text relative bg-slate-300">
+    <section id="home" className="text relative bg-white">
       {mounted && scrolled && (
         <div className="sticky top-0 w-full z-50">
           <Nav open={open} click={handleOpen} unclick={handleClose} />
@@ -122,8 +122,8 @@ export default function Home() {
       <section className="max-w-7xl pt-20 md:w-8/12 mx-auto text-blue px-4 md:px-auto">
         <h2 className="md:text-4xl text-2xl font-thin md:mb-8 mb-4">CONTACTEZ-NOUS</h2>
         <p>N'hésitez pas à nous appeler pour discuter de votre futur projet ! Pour toute demande d'emploi, de sous-traitance pour nous ou d'informations sur notre projet en cours, veuillez utiliser le formulaire ci-dessous afin que nous puissions vous mettre en contact avec la meilleure personne pour vous aider.</p>
-        <div className="mx-auto w-[12rem] text-center mt-6">
-          <Button style="mx-auto">
+        <div className="mx-auto w-[12rem]- text-center mt-6">
+          <Button style="mx-auto-">
             <Link href="/contact">PRENDRE CONTACT</Link>
           </Button>
         </div>

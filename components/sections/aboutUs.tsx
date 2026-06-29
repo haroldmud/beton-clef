@@ -18,7 +18,7 @@ export default function About() {
         </p>
       </div>
       {!roll && (
-        <div className="mx-auto w-[12rem] text-center mt-6">
+        <div className="mx-auto text-center mt-6">
           <Button onClick={() => setRoll(true)}>DECOUVREZ-EN PLUS</Button>
         </div>
       )}
