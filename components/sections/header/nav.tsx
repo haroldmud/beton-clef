@@ -39,7 +39,7 @@ export default function Nav({ open, click, unclick }: NavProps) {
       if (!el) return
       const obs = new IntersectionObserver(
         ([entry]) => { if (entry.isIntersecting) setActiveHash(`#${id}`) },
-        { threshold: 0.3 }
+        { rootMargin: '-10% 0px -60% 0px', threshold: 0 }
       )
       obs.observe(el)
       observers.push(obs)
@@ -56,7 +56,7 @@ export default function Nav({ open, click, unclick }: NavProps) {
         <NavMob open={open ?? true} click={click ?? (() => {})} unclick={unclick ?? (() => {})} activeHash={activeHash} />
         <div className="hidden lg:flex flex-col justify-center">
           <ul className="flex gap-4 text-white">
-            {currentRoute === navData[0].path && (
+            {currentRoute === navData[0].path ? (
               <div className="lg:flex gap-4">
                 {sectionLinks.map(({ name, hash }) => (
                   <li key={hash} className="font-bold text-xl">
@@ -69,6 +69,12 @@ export default function Nav({ open, click, unclick }: NavProps) {
                   </li>
                 ))}
               </div>
+            ) : (
+              <li className="font-bold text-xl">
+                <Link href="/" className="text-white hover:text-yellow transition-colors">
+                  ACCEUIL
+                </Link>
+              </li>
             )}
             <li className="font-bold text-xl">
               <Link href={navData[4].path} className={currentRoute === navData[4].path ? 'border-b-2 border-yellow text-yellow' : 'text-white'}>
