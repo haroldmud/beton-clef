@@ -36,8 +36,8 @@ export default function Home() {
       )}
       <Header open={open} click={handleOpen} unclick={handleClose} headerImg="/assets/images/hero.webp">
         <div className={`absolute flex justify-center md:top-[13rem] ${open ? 'top-[11rem]' : 'top-[15rem]'} w-[100%] z-10`}>
-          <div className="max-w-7xl md:w-9/12 w-11/12 md:pt-24 border border-red-500">
-            <h2 className="encapsulation mt-8 md:text-[4rem] text-[2rem] flex md:flex-col lg:w-[60rem] text-white font-semibold md:leading-[5rem] leading-[3rem]">
+          <div className="max-w-7xl md:w-9/12 w-11/12 md:pt-24">
+            <h2 className="encapsulation md:mt-8 mt-28 md:text-[4rem] text-[2.8rem] flex md:flex-col  text-blue-100 opacity-80 font-semibold md:leading-[5rem] leading-[3rem]">
               NOUS ELABORONS ET REALISONS DES VASTES CHANTIERS
             </h2>
             <div className="mt-12">
@@ -48,32 +48,32 @@ export default function Home() {
           </div>
         </div>
         <div id="function" className="md:absolute w-full lg:-bottom-[8.5rem] md:-bottom-[12rem] flex justify-center text-slate-100 ">
-          <div className="flex md:flex-row flex-col max-w-7xl lg:w-7/12 md:w-9/12 background md:p-10 p-8 md:gap-8 shadow-lg">
+          <div className="flex md:flex-row flex-col max-w-7xl lg:w-7/12 md:w-11/12 background md:p-10 p-8 md:gap-8 shadow-lg">
             <div className="p-2 md:w-11/12">
               <div className="flex justify-center md:mb-9 mb-4">
                 <img className="lg:w-12 md:w-12 w-8" src="/assets/icons/section1/image1.png" alt="" />
               </div>
               <div>
                 <h3 className="font-bold mb-2 text-center">Conception et Plans</h3>
-                <p className="text-xs text-center w-8/12 mx-auto">Nous vous offrons des services de conception et de planification créatifs.</p>
+                <p className="text-xs text-center w-11/12 mx-auto">Nous vous offrons des services de conception et de planification créatifs.</p>
               </div>
             </div>
-            <div className="p-2 md:w-[30rem]">
+            <div className="p-2 md:w-11/12">
               <div className="flex justify-center md:mb-4">
                 <img className="lg:w-16 md:w-12 w-12" src="/assets/icons/section1/image2.png" alt="" />
               </div>
               <div>
                 <h3 className="font-bold mb-2 text-center">Priorisation de la qualité</h3>
-                <p className="text-xs text-center w-8/12 mx-auto">Nos projets répondent aux normes les plus élevées en matière de sécurité.</p>
+                <p className="text-xs text-center w-11/12 mx-auto">Nos projets répondent aux normes les plus élevées en matière de sécurité.</p>
               </div>
             </div>
-            <div className="p-2 md:w-[30rem]">
+            <div className="p-2 md:w-11/12">
               <div className="flex justify-center md:mb-9 mb-4">
                 <img className="ld:w-16 md:w-10 w-8" src="/assets/icons/section1/image3.png" alt="" />
               </div>
               <div>
                 <h3 className="font-bold mb-2 text-center">Gestion de construction</h3>
-                <p className="text-xs text-center w-8/12 mx-auto">La gestion de delais et la surveillance de la qualité est notre priorite.</p>
+                <p className="text-xs text-center w-11/12 mx-auto">La gestion de delais et la surveillance de la qualité est notre priorite.</p>
               </div>
             </div>
           </div>
