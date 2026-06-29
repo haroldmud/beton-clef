@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 import NavMob from './NavMob'
 import Button from '../../ui/button'
 import { navData } from '../fonctions/data'
@@ -26,11 +27,33 @@ function scrollTo(hash: string) {
 export default function Nav({ open, click, unclick }: NavProps) {
   const router = useRouter()
   const currentRoute = router.pathname
+  const [activeHash, setActiveHash] = useState('#home')
+
+  useEffect(() => {
+    if (currentRoute !== '/') return
+    const ids = sectionLinks.map(l => l.hash.slice(1))
+    const observers: IntersectionObserver[] = []
+
+    ids.forEach(id => {
+      const el = document.getElementById(id)
+      if (!el) return
+      const obs = new IntersectionObserver(
+        ([entry]) => { if (entry.isIntersecting) setActiveHash(`#${id}`) },
+        { threshold: 0.3 }
+      )
+      obs.observe(el)
+      observers.push(obs)
+    })
+
+    return () => observers.forEach(o => o.disconnect())
+  }, [currentRoute])
+
+  const isActive = (hash: string) => currentRoute === '/' && activeHash === hash
 
   return (
     <nav className="flex justify-center">
       <div className="lg:flex justify-between xl:w-9/12 w-11/12 py-2 bg-blue px-2 z-20 max-w-7xl">
-        <NavMob open={open ?? true} click={click ?? (() => {})} unclick={unclick ?? (() => {})} />
+        <NavMob open={open ?? true} click={click ?? (() => {})} unclick={unclick ?? (() => {})} activeHash={activeHash} />
         <div className="hidden lg:flex flex-col justify-center">
           <ul className="flex gap-4 text-white">
             <li className="font-bold text-xl">
@@ -40,9 +63,12 @@ export default function Nav({ open, click, unclick }: NavProps) {
             </li>
             {currentRoute === navData[0].path && (
               <div className="lg:flex gap-4">
-                {sectionLinks.slice(1).map(({ name, hash }) => (
+                {sectionLinks.map(({ name, hash }) => (
                   <li key={hash} className="font-bold text-xl">
-                    <button onClick={() => scrollTo(hash)} className="text-white hover:text-yellow transition-colors">
+                    <button
+                      onClick={() => scrollTo(hash)}
+                      className={`transition-colors ${isActive(hash) ? 'border-b-2 border-yellow text-yellow' : 'text-white hover:text-yellow'}`}
+                    >
                       {name}
                     </button>
                   </li>

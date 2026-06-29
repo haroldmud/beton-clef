@@ -5,19 +5,29 @@ interface NavMobProps {
   open: boolean
   click: () => void
   unclick: () => void
+  activeHash?: string
 }
 
-const list = [
-  { name: 'ACCEUIL', path: '/' },
-  { name: 'A PROPOS', path: '/aboutUs' },
-  { name: 'SERVICES', path: '/service' },
-  { name: 'REALISATION', path: '/realisation' },
-  { name: 'CONTACT', path: '/contact' },
+const sectionLinks = [
+  { name: 'ACCEUIL',     hash: '#home' },
+  { name: 'SERVICES',    hash: '#function' },
+  { name: 'REALISATION', hash: '#realisation' },
+  { name: 'A PROPOS',    hash: '#about' },
 ]
 
-export default function NavMob({ open, click, unclick }: NavMobProps) {
+function scrollTo(hash: string, close: () => void) {
+  close()
+  setTimeout(() => {
+    const el = document.querySelector(hash)
+    if (el) el.scrollIntoView({ behavior: 'smooth' })
+    else window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, 50)
+}
+
+export default function NavMob({ open, click, unclick, activeHash = '#home' }: NavMobProps) {
   const router = useRouter()
   const currentRoute = router.pathname
+  const isHome = currentRoute === '/'
 
   return (
     <section className="lg:hidden flex justify-between">
@@ -33,15 +43,24 @@ export default function NavMob({ open, click, unclick }: NavMobProps) {
       </div>
       <div className={`${open ? 'hidden' : 'absolute z-50'} top-12 w-10/12 left-6 h-fit flex flex-col justify-center`}>
         <ul className="flex flex-col gap-4 text-white mx-auto">
+          {isHome ? (
+            sectionLinks.map(({ name, hash }) => (
+              <li key={hash} className="font-bold text-xl">
+                <button
+                  onClick={() => scrollTo(hash, unclick)}
+                  className={activeHash === hash ? 'border-b-2 border-yellow text-yellow' : 'text-white'}
+                >
+                  {name}
+                </button>
+              </li>
+            ))
+          ) : (
+            <li className="font-bold text-xl">
+              <Link href="/" className="text-white">ACCEUIL</Link>
+            </li>
+          )}
           <li className="font-bold text-xl">
-            <Link href={list[0].path} className={currentRoute === list[0].path ? 'border-b-2 border-yellow text-yellow' : 'text-white'}>
-              {list[0].name}
-            </Link>
-          </li>
-          <li className="font-bold text-xl">
-            <Link href={list[4].path} className={currentRoute === list[4].path ? 'border-b-2 border-yellow text-yellow' : 'text-white'}>
-              {list[4].name}
-            </Link>
+            <Link href="/contact" className="text-white">CONTACT</Link>
           </li>
         </ul>
       </div>
