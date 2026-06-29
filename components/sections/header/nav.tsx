@@ -56,11 +56,6 @@ export default function Nav({ open, click, unclick }: NavProps) {
         <NavMob open={open ?? true} click={click ?? (() => {})} unclick={unclick ?? (() => {})} activeHash={activeHash} />
         <div className="hidden lg:flex flex-col justify-center">
           <ul className="flex gap-4 text-white">
-            <li className="font-bold text-xl">
-              <Link href={navData[0].path} className={currentRoute === navData[0].path ? 'border-b-2 border-yellow text-yellow' : 'text-white'}>
-                {navData[0].name}
-              </Link>
-            </li>
             {currentRoute === navData[0].path && (
               <div className="lg:flex gap-4">
                 {sectionLinks.map(({ name, hash }) => (
