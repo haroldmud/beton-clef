@@ -125,7 +125,7 @@ export default function Home() {
         <p>N'hésitez pas à nous appeler pour discuter de votre futur projet ! Pour toute demande d'emploi, de sous-traitance pour nous ou d'informations sur notre projet en cours, veuillez utiliser le formulaire ci-dessous afin que nous puissions vous mettre en contact avec la meilleure personne pour vous aider.</p>
         <div className="mx-auto w-[12rem]- text-center mt-6">
           <Button style="mx-auto-">
-            <Link href="/contact">PRENDRE CONTACT</Link>
+            <Link href="/contact" className="flex items-center gap-2">PRENDRE CONTACT <FiArrowUpRight className="text-lg" /></Link>
           </Button>
         </div>
       </section>
