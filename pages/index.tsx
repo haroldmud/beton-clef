@@ -47,8 +47,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="function" className="md:absolute w-full lg:-bottom-[8.5rem] md:-bottom-[12rem] flex justify-center text-slate-100 ">
-          <div className="flex md:flex-row flex-col max-w-7xl lg:w-7/12 md:w-11/12 background md:p-10 p-8 md:gap-8 shadow-lg">
+        <div id="function" className="md:absolute w-full md:-bottom-[10rem] min-[834px]:-bottom-[8.5rem] lg:-bottom-[8.5rem] flex justify-center text-blue">
+          <div className="flex md:flex-row flex-col max-w-7xl xl:w-7/12 lg:w-11/12 md:w-11/12 background md:p-10 p-8 md:gap-8 shadow-lg">
             <div className="p-2 md:w-11/12">
               <div className="flex justify-center md:mb-9 mb-4">
                 <img className="lg:w-12 md:w-12 w-8" src="/assets/icons/section1/image1.png" alt="" />
