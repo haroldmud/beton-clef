@@ -17,7 +17,7 @@ export default function Header({ children, headerImg, open, click, unclick }: He
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScroll(window.scrollY >= 200)
+      setIsScroll(window.scrollY >= 1000)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -46,13 +46,6 @@ export default function Header({ children, headerImg, open, click, unclick }: He
         </Link>
       </section>
       <div>{children}</div>
-      {isScroll && (
-        <div className={`fixed w-full bottom-2 ${isVisible ? 'animate-bounce' : ''} z-50 flex justify-end pr-4`}>
-          <a href="#home">
-            <img className="w-12 rounded-3xl" src="/assets/icons/up.png" alt="" />
-          </a>
-        </div>
-      )}
     </header>
   )
 }
