@@ -31,6 +31,12 @@ export default function Nav({ open, click, unclick }: NavProps) {
 
   useEffect(() => {
     if (currentRoute !== '/') return
+
+    const handleScroll = () => {
+      if (window.scrollY === 0) setActiveHash('#home')
+    }
+    window.addEventListener('scroll', handleScroll)
+
     const ids = sectionLinks.map(l => l.hash.slice(1))
     const observers: IntersectionObserver[] = []
 
@@ -45,7 +51,10 @@ export default function Nav({ open, click, unclick }: NavProps) {
       observers.push(obs)
     })
 
-    return () => observers.forEach(o => o.disconnect())
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      observers.forEach(o => o.disconnect())
+    }
   }, [currentRoute])
 
   const isActive = (hash: string) => currentRoute === '/' && activeHash === hash
