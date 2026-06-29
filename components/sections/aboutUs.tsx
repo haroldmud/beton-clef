@@ -21,7 +21,7 @@ export default function About() {
       {!roll && (
         <div className="mx-auto text-center mt-6">
           <Button onClick={() => setRoll(true)}>
-            <span className="flex items-center gap-2">DECOUVREZ-EN PLUS <FiChevronDown className="text-lg" /></span>
+            <span className="group flex items-center">DECOUVREZ-EN PLUS <FiChevronDown className="text-lg ml-1 transition-transform duration-300 group-hover:translate-y-1" /></span>
           </Button>
         </div>
       )}
