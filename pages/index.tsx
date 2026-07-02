@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       )}
       <Header open={open} click={handleOpen} unclick={handleClose} headerImg="/assets/images/hero.webp">
-        <div className={`absolute flex justify-center md:top-[13rem] ${open ? 'top-[11rem]' : 'top-[15rem]'} w-[100%] z-10`}>
+        <div className="absolute flex justify-center md:top-[13rem] top-[11rem] w-[100%] z-10">
           <div className="max-w-7xl md:w-9/12 w-11/12 md:pt-24">
             <h2 className="encapsulation md:mt-8 mt-28 md:text-[4rem] text-[2.8rem] flex md:flex-col  text-blue-100 opacity-80 font-semibold md:leading-[5rem] leading-[3rem]">
               NOUS ELABORONS ET REALISONS DES VASTES CHANTIERS
