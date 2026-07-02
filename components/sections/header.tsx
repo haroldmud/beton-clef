@@ -34,7 +34,7 @@ export default function Header({ children, headerImg, open, click, unclick }: He
     <header className="text-blue font-inter relative lg:mb-40 md:mb-[12rem]">
       <Info />
       <section className="relative">
-        <div className="sticky top-0 w-full">
+        <div className="sticky top-0 w-full z-30">
           <Nav open={open} click={click} unclick={unclick} />
         </div>
         <Link href="/">

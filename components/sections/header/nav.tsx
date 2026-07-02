@@ -66,8 +66,13 @@ export default function Nav({ open, click, unclick }: NavProps) {
         unclick?.()
       }
     }
+    const handleScroll = () => unclick?.()
     document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      window.removeEventListener('scroll', handleScroll)
+    }
   }, [isMenuOpen, unclick])
 
   const handleMobLink = (hash: string) => {
