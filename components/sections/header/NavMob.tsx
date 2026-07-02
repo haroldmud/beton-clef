@@ -15,12 +15,19 @@ export default function NavMob({ open, click, unclick }: NavMobProps) {
       >
         {open ? (
           <>
-            <img className="h-6" src="/assets/icons/menu.png" alt="" />
+            <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+              <line x1="3" y1="6"  x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
             <h3 className="text-white text-[0.9rem] h-fit mt-[0.1rem] font-bold">MENU</h3>
           </>
         ) : (
           <>
-            <img className="h-4 mt-1" src="/assets/icons/close.png" alt="" />
+            <svg className="h-5 w-5 text-white mt-0.5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+              <line x1="4" y1="4" x2="20" y2="20" />
+              <line x1="20" y1="4" x2="4" y2="20" />
+            </svg>
             <h3 className="text-white text-[0.9rem] h-fit mt-[0.1rem] font-bold">FERME</h3>
           </>
         )}

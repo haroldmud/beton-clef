@@ -82,7 +82,7 @@ export default function Header({ children, headerImg, open, click, unclick }: He
           href="https://wa.me/243994345462"
           target="_blank"
           rel="noopener noreferrer"
-          className="group fixed md:bottom-12 bottom-6 md:right-12 right-6 z-50 flex items-center gap-2"
+          className="group fixed md:bottom-12 bottom-6 md:right-12 right-6 z-50 flex items-center gap-2 animate-[fadeIn_0.4s_ease_forwards]"
         >
           <span className={`transition-opacity duration-700 ease-in-out bg-white text-green-600 text-sm font-semibold px-3 py-1 rounded-full shadow-lg whitespace-nowrap ${autoShow ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
             Discutez avec nous
