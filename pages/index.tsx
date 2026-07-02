@@ -82,7 +82,7 @@ export default function Home() {
       </Header>
       <section className="max-w-7xl pt-20 md:w-8/12 mx-auto text-blue px-4 md:px-auto">
         <h2 className="md:text-4xl text-2xl font-thin md:mb-8 mb-4">BETON-CLEF A UNE FIERE TRADITION DE SERVICE ENTANT QU'ENTREPRENEUR</h2>
-        <p>Forts de plus de 15 ans d’expérience dans la construction locale et nationale, nous réalisons des projets d’envergure dans le respect des délais et du budget. Depuis plus de deux décennies, nous accompagnons nos clients en plaçant leurs besoins au cœur de chaque projet et en nous engageant à dépasser leurs attentes.</p>
+        <p>Forts de plus de {new Date().getFullYear() - 2002} ans d’expérience dans la construction locale et nationale, nous réalisons des projets d’envergure dans le respect des délais et du budget. Depuis plus de deux décennies, nous accompagnons nos clients en plaçant leurs besoins au cœur de chaque projet et en nous engageant à dépasser leurs attentes.</p>
       </section>
       <section className="text-blue flex justify-center md:pt-16 pt-8 md:mb-12">
         <Fonctions />
