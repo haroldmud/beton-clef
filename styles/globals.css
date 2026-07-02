@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  15%       { transform: rotate(-15deg); }
+  30%       { transform: rotate(15deg); }
+  45%       { transform: rotate(-12deg); }
+  60%       { transform: rotate(12deg); }
+  75%       { transform: rotate(-6deg); }
+  90%       { transform: rotate(6deg); }
+}
+
+.whatsapp-shake {
+  animation: shake 0.7s ease-in-out;
+}
+
+.page-fade {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.headerImg {
+  filter: brightness(60%);
+}
+.encapsulation{
+  text-shadow:
+  -2px 0px 0px rgba(255, 255, 255, 0.589),
+  2px 0px 0px rgb(255, 255, 255),
+  0px -2px 0px rgb(198, 213, 59),
+  0px 2px 0px rgb(0, 0, 0);
+}
+
+.back {
+  background-color: #98906e;
+}
+
+.background {
+  background-color: #26386931;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.color {
+  color: #e4cc60;
+}
+
