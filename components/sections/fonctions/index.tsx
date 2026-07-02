@@ -5,7 +5,7 @@ export default function Fonctions() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:max-w-7xl sm:w-9/12 w-11/12 justify-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 md:max-w-7xl sm:w-9/12 w-11/12 justify-center">
       {data.map((item, index) => {
         const isActive = activeIndex === index
         return (
