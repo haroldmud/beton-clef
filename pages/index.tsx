@@ -55,7 +55,7 @@ export default function Home() {
                 <img className="lg:w-12 md:w-12 w-8" src="/assets/icons/section1/image1.png" alt="" />
               </div>
               <div>
-                <h3 className="font-bold mb-2 text-center">Conception et Plans</h3>
+                <h3 className="font-bold mb-2 text-center">Conception et Plan</h3>
                 <p className="text-xs text-center w-11/12 mx-auto">Nous vous offrons des services de conception et de planification créatifs.</p>
               </div>
             </div>
